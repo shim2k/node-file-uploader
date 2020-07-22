@@ -1,0 +1,27 @@
+<style>
+.file-upload-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.file {
+    display: flex;
+    padding: 20px 0;
+}
+</style>
+
+<html>
+    <body>
+        <div class="file-upload-page">
+            <form action="upload" method="post" enctype="multipart/form-data">
+                <label>
+                    <input type="file" class="file" multiple name="fileToUpload">
+                </label>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>
